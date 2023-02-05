@@ -1,0 +1,63 @@
+.activity {
+    margin-bottom: 3rem;
+    &__container {
+        @include tablette {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            height: 450px;
+        }
+    }
+    
+    &__card {
+        position: relative;
+        @include tablette {
+            margin: 0;
+            width: 24%;
+            height: 100%;
+        }
+    }
+    
+    &__img {
+        height: 18rem;
+        @include tablette {
+           height: 100%; 
+        }
+    }
+    
+    &__h3 {
+        position: absolute;
+        background-color: $color-white;
+        bottom: 0;
+        width: 100%;
+        padding: 1.5rem;
+    }
+  
+    &__card-2 {
+        @include tablette {
+            height: 56%;
+        }
+    }
+
+    &__card-3 {
+        @include tablette {
+            height: 41%;
+        }
+        
+    }
+
+    &__card-5 {
+        @include tablette {
+            height: 41%;
+        }
+        
+    }
+
+    &__card-6 {
+        @include tablette {
+            height: 56%;
+        }
+    }
+}

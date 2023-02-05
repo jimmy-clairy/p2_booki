@@ -1,0 +1,50 @@
+.header {
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left:4%;
+    }
+
+    &__logo {
+        width: 10rem;
+        height: auto;
+        margin: 2.5rem auto;
+        display: block;
+        cursor: pointer;
+        transition: all 0.4s;
+        &:hover {
+            transform: scale(1.2);
+        }
+        @include desktop {
+            margin: 0;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    @include desktop {
+        margin-right: 4%;
+    }
+    &__link {
+        width: 50%;
+        text-align: center;
+        border-bottom: $color-secondary solid 0.3rem;
+        padding-bottom: 1rem;
+        @include desktop {
+            padding: 4rem 3rem;
+            border-bottom: none;
+            border-top: rgba($color-primary, 0)  0.3rem solid;
+        }
+        &:hover {
+            border-bottom: $color-primary  0.3rem solid;
+            color: $color-primary;
+            
+            @include desktop {
+                border-bottom: none;
+                border-top: $color-primary  0.3rem solid;
+            }
+        }
+    }
+}

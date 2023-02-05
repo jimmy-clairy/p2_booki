@@ -1,0 +1,73 @@
+.form {
+    position: relative;
+    border: $color-secondary 0.1rem solid;
+    border-radius: $border;
+    overflow: hidden;
+    height: 5rem;
+    @include tablette {
+        max-width: 57rem;
+    }
+
+    &__label {
+        position: absolute;
+        left: 0;
+        width: 5rem;
+        height: 100%;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-secondary;
+    }
+
+    &__destination {
+        border: none;
+        outline: none;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        height: 100%;
+        width: 87%;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border: none;
+        background-color: $color-primary;
+        color: $color-white;
+        font-size: 2rem;
+        cursor: pointer;
+        &:hover {
+            background-color: darken($color-primary, 15);
+        }
+    }
+
+    &__txt-hidden {
+        position: absolute;
+        left: -10000em;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    &__btn-hidden {
+        border-radius: $border;
+        width: 5rem;
+        @include tablette {
+            display: none;
+        }
+    }
+
+    &__btn-over {
+        display: none;
+        @include tablette {
+            display: block;
+            padding: 0 1rem;
+        }
+    }
+}

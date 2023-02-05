@@ -1,0 +1,68 @@
+.research {
+    &__heading {
+        margin-top: 3rem;
+    }
+}
+
+.filter {
+    &__heading {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 3rem 0 1rem;
+    }
+
+    &__div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__paragraph {
+        font-weight: bold;
+        border: $color-secondary 0.3rem solid;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        padding-right:  1.6rem;
+        margin:0.5rem 1.6rem 0.5rem 0;
+        transition: transform 0.3s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+            color: $color-primary;
+        }
+    }
+
+    &__icon {
+        font-size: 2rem;
+        color: $color-primary;
+        background-color: lighten($color-primary, 42);
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        margin: -0.2rem 1.6rem -0.2rem -0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        flex: none;
+        color: $color-primary;
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: $color-secondary 0.2rem solid;
+        font-family: serif;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.2rem;
+    }
+}
